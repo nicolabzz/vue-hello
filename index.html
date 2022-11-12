@@ -7,9 +7,26 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+
     <title>Vue Hello</title>
 </head>
 <body>
+
+    <div id="app">
+        <div :class="newContainerCall">
+            
+            <h1>{{h1Mess}}</h1>
+
+            <div class="image">
+                <h1>Angeli Ribelli</h1>
+                <img :src="img" alt="">
+            </div>
+        </div>
+    </div>
     
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
